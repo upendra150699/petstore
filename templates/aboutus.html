@@ -1,0 +1,35 @@
+{% extends 'base.html' %}    <!-- extend must be mentioned on first line of the child template -->
+{% load static %}
+
+{% block 'main' %}
+<header>
+    <h1>About Us</h1>
+</header>
+
+<main>
+    <section>
+        <h2>Our Mission</h2>
+        <p>At KGL, our mission is to provide exceptional service and quality products to our customers. We believe in creating value through innovation and sustainability.</p>
+    </section>
+
+    <section>
+        <h2>Our History</h2>
+        <p>Founded in 1998, KGL has grown from a small startup into a leading provider in the industry. Our journey has been marked by dedication, hard work, and a commitment to excellence.</p>
+    </section>
+
+    <section>
+        <h2>Our Team</h2>
+        <p>We have a diverse team of professionals who are passionate about what they do. Our team works collaboratively to bring the best solutions to our clients.</p>
+    </section>
+
+    <section>
+        <h2>Contact Us</h2>
+        <p>If you would like to learn more about us or have any questions, please feel free to <a href="mailto:info@yourcompany.com">contact us</a>.</p>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2024 KGL. All rights reserved.</p>
+</footer>
+
+{% endblock 'main' %}

@@ -1,0 +1,16 @@
+{% load static %}
+{% include 'header.html' %}
+
+<div class="myrow2 row  mt-2">   <!-- row2 starts here -->
+   {% include 'sidebar.html' %}  <!-- including sidebar (column1 in second row) -->
+    <div class="box col-10">     <!-- second column of second row -->
+       <div class="row mx-auto">
+            {% block 'main' %}
+              <!-- main content (page specific content) should be placed here -->
+           {% endblock 'main' %}
+       </div>
+      
+    </div> <!-- closing second column of second row -->
+ </div>  <!-- row2 end here -->
+
+{% include 'footer.html' %}

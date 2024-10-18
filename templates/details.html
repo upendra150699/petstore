@@ -1,0 +1,21 @@
+{% extends 'base.html' %}    <!-- extend must be mentioned on first line of the child template -->
+{% load static %}
+
+{% block 'main' %}
+    <div class="col-md-6">
+        <img src= "{% static 'images/download.jpg' %}" class="card-img-top" height="250px">
+    </div>
+    <div class="card col-md-6" >
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">{{pet.name}}</h5>
+          <h5 class="card-title">{{pet.breed}} {{pet.type}}</h5>
+          <strong>{{pet.gender}} {{pet.age}} months</strong><br>
+          <p class="card-text">{{pet.details}}</p>
+          <strong>Rs. {{pet.price}}</strong><br><br>
+          <a href="/addtocart/{{pet.id}}" class="btn btn-warning">Add to Cart</a> 
+          <a href="/" class="btn btn-warning">Back</a>
+        </div>
+      </div>
+    </div>
+{% endblock 'main' %}
